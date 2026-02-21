@@ -1,0 +1,333 @@
+/* --- COLORES Y TIPOGRAFÍAS GLOBALES --- */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #FDFBF7; /* Fondo crema muy sutil */
+    color: #333333; /* Texto gris oscuro */
+}
+
+/* --- CABECERA Y MENÚ --- */
+header {
+    background-color: #1A432B; /* VERDE OSCURO ELEGANTE */
+    color: #FFFFFF;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 4px solid #C5A059; /* Línea dorada ajustada */
+}
+
+.imagen-escudo {
+    max-width: 300px; /* Tamaño aumentado para que luzca el logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 5px;
+    font-style: italic;
+    color: #E8E3D7;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #C5A059;
+    color: #1A432B;
+    border-radius: 3px;
+}
+
+/* --- SECCIONES PRINCIPALES --- */
+section {
+    max-width: 900px; /* Un poco más ancho para acomodar el formulario y mapa */
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #E0DCD3;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #1A432B;
+    border-bottom: 1px solid #E0DCD3;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* --- PROCESOS Y DOCUMENTOS --- */
+.proceso-item {
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+.proceso-item h3 {
+    color: #1A432B;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+
+.docs-categoria a {
+    color: #1A432B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.docs-categoria a:hover {
+    color: #C5A059;
+}
+
+/* --- NUESTRO EQUIPO --- */
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.equipo-grid article {
+    text-align: center; 
+    background: #F9F6F0;
+    padding: 20px;
+    border-top: 4px solid #1A432B;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.foto-oficial {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #C5A059;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- FAQ --- */
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #E0DCD3;
+    padding-bottom: 10px;
+}
+
+.faq-item p strong {
+    color: #1A432B;
+    font-size: 1.1em;
+}
+
+/* --- CONTACTO, FORMULARIO Y MAPA --- */
+.contacto-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.contacto-info {
+    flex: 1;
+    min-width: 300px;
+    color: #333;
+}
+
+.formulario-contacto {
+    margin-top: 30px;
+    background: #fdfbf7;
+    padding: 20px;
+    border: 1px solid #e0dcd3;
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    color: #1a432b;
+    margin-bottom: 5px;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.boton-enviar {
+    background-color: #1a432b;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.boton-enviar:hover {
+    background-color: #c5a059;
+    color: #1a432b;
+}
+
+.mapa-frame {
+    flex: 1.2;
+    min-width: 300px;
+    height: 450px;
+    border: 2px solid #C5A059;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1A432B; /* Cambiado a verde para coherencia */
+    color: #FFFFFF;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    .imagen-escudo {
+        max-width: 200px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 20px 10px;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .equipo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-contenedor {
+        flex-direction: column;
+    }
+
+    .mapa-frame {
+        width: 100%;
+        height: 300px;
+    }
+}
+/* --- ESTILO ACORDEÓN --- */
+.faq-pregunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.faq-respuesta {
+    max-height: 0; /* Oculto por defecto */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Animación suave */
+}
+
+.faq-item.activo .faq-respuesta {
+    max-height: 500px; /* Se abre al añadir la clase 'activo' */
+}
+
+.faq-item.activo .flecha {
+    transform: rotate(180deg); /* La flecha gira */
+}
+
+.flecha {
+    transition: transform 0.3s;
+    color: #C5A059;
+}
+.whatsapp-box {
+    background: #f0f7f4; /* Un verde muy suave */
+    padding: 20px;
+    border: 1px solid #1a432b;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #25D366; /* Verde oficial de WhatsApp */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.boton-whatsapp:hover {
+    background-color: #128C7E;
+    transform: scale(1.05);
+}
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-float img {
+    width: 35px;
+}
