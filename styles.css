@@ -1497,6 +1497,29 @@ a:hover {
     /* Header móvil */
     .btn-menu {
         display: flex;
+        flex-shrink: 0;
+    }
+
+    .logo-link {
+        flex-shrink: 1;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .logo-texto {
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .logo-nombre {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
+
+    .logo-subtitulo {
+        display: none;
     }
 
     .nav-principal {
