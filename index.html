@@ -3,246 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tribunal Eclesiástico Metropolitano - Maracaibo</title>
-    <meta name="description" content="Página oficial del Tribunal Eclesiástico Metropolitano de Maracaibo. Información sobre procesos de nulidad matrimonial y servicios canónicos.">
+
+    <!-- SEO -->
+    <title>Tribunal Eclesiástico Metropolitano | Arquidiócesis de Maracaibo</title>
+    <meta name="description" content="Órgano de justicia canónica de la Arquidiócesis de Maracaibo. Atendemos causas de nulidad matrimonial con caridad pastoral y rigor jurídico.">
+    <meta name="keywords" content="tribunal eclesiástico, nulidad matrimonial, Maracaibo, Arquidiócesis, derecho canónico, Mitis Iudex">
+    <meta name="author" content="Tribunal Eclesiástico Metropolitano de Maracaibo">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tribunal Eclesiástico Metropolitano — Arquidiócesis de Maracaibo">
+    <meta property="og:description" content="Administración de justicia eclesial con profunda caridad pastoral al servicio del Pueblo de Dios.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_VE">
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="logo-oficial.svg" alt="Logo Tribunal Eclesiástico Metropolitano" class="imagen-escudo">
-            <h1>Tribunal Eclesiástico Metropolitano</h1>
-            <p>Arquidiócesis de Maracaibo - Venezuela</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#procesos">Procesos</a></li>
-                <li><a href="#equipo">Equipo</a></li> 
-                <li><a href="#documentacion">Documentación</a></li>
-                <li><a href="#faq">Preguntas Frecuentes</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+<!-- ============================================================
+     HEADER FIJO
+     ============================================================ -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo-link" aria-label="Inicio — Tribunal Eclesiástico Metropolitano">
+            <img src="logo-oficial.svg" alt="Escudo Arquidiócesis de Maracaibo" width="52" height="52">
+            <div class="logo-texto">
+                <span class="logo-nombre">Tribunal Eclesiástico Metropolitano</span>
+                <span class="logo-subtitulo">Arquidiócesis de Maracaibo · Venezuela</span>
+            </div>
+        </a>
+
+        <!-- Botón hamburguesa (móvil) -->
+        <button class="btn-menu" aria-label="Abrir menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <!-- Navegación -->
+        <nav class="nav-principal" aria-label="Navegación principal">
+            <a href="index.html" class="activo">Inicio</a>
+            <a href="proceso.html">Proceso</a>
+            <a href="composicion.html">El Tribunal</a>
+            <a href="faq.html">Preguntas</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="contacto.html" class="nav-cta">Iniciar proceso</a>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <section id="inicio">
-        <h2>Bienvenidos al Tribunal Eclesiástico Metropolitano</h2>
-        <p>El Tribunal Eclesiástico Metropolitano es el órgano a través del cual el Arzobispo ejerce su potestad judicial en la Arquidiócesis de Maracaibo. Nuestra misión fundamental es la búsqueda de la verdad y la administración de la justicia eclesial con profunda caridad pastoral.</p>
-        <p>Nos dedicamos de manera especial a la instrucción y resolución de las causas de declaración de nulidad matrimonial. A través de este proceso, ofrecemos un ministerio de escucha, acompañamiento y clarificación a los fieles, siempre al servicio de la sanación espiritual y la paz en nuestra comunidad arquidiocesana.</p>
-    </section>
 
-    <section id="procesos">
-        <h2>Procesos y Trámites</h2>
-        <p>La Iglesia ofrece el servicio de sus tribunales para el examen de la validez del vínculo matrimonial. A continuación, detallamos las fases principales del proceso ordinario:</p>
-        
-        <div class="proceso-item">
-            <h3>1. Fase de Introducción</h3>
-            <p>Inicia con la presentación del <strong>Libelo</strong> (escrito de demanda). En este documento, se exponen los hechos de la vida matrimonial y los "capítulos" por los cuales se considera que el matrimonio pudo ser nulo desde el inicio.</p>
+<!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+<section class="hero" aria-label="Presentación del tribunal">
+    <div class="hero-contenido">
+        <img src="logo-oficial.svg" alt="" class="hero-escudo" aria-hidden="true" width="110" height="110">
+        <span class="hero-subtitulo-sup">Arquidiócesis de Maracaibo</span>
+        <h1>Tribunal Eclesiástico<br>Metropolitano</h1>
+        <span class="hero-diocesis">Maracaibo · Venezuela · Al servicio del Pueblo de Dios</span>
+        <p>Administramos justicia eclesial con rigor canónico y profunda caridad pastoral. Estamos aquí para acompañarle en su camino hacia la verdad y la paz espiritual.</p>
+        <div class="hero-botones">
+            <a href="proceso.html" class="btn btn-primario">Iniciar proceso de nulidad</a>
+            <a href="#bienvenida" class="btn btn-secundario">Conózcanos</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================================
+     SECCIÓN: BIENVENIDA Y MISIÓN
+     ============================================================ -->
+<section class="seccion" id="bienvenida" aria-labelledby="titulo-bienvenida">
+    <div class="contenedor">
+        <div class="seccion-encabezado animar">
+            <span class="etiqueta-seccion">Nuestra misión</span>
+            <h2 id="titulo-bienvenida">Al servicio de la justicia y la verdad</h2>
+            <div class="divisor"></div>
+            <p>El Tribunal Eclesiástico Metropolitano es el órgano a través del cual el Arzobispo ejerce su potestad judicial en la Arquidiócesis de Maracaibo, al servicio de la verdad y de la sanación espiritual de los fieles.</p>
         </div>
 
-        <div class="proceso-item">
-            <h3>2. Fase de Instrucción</h3>
-            <p>Es el momento de la prueba. El Tribunal recaba declaraciones de las partes, testimonios de testigos e informes de peritos (psicólogos o médicos) para alcanzar la <strong>certeza moral</strong> sobre los hechos.</p>
+        <div class="cards-grid">
+            <!-- Card 1 -->
+            <a href="proceso.html" class="card animar animar-delay-1">
+                <div class="card-icono">
+                    <svg viewBox="0 0 24 24" stroke-width="1.8" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                </div>
+                <h3>Proceso de Nulidad</h3>
+                <p>Conozca qué es la declaración de nulidad matrimonial, cómo funciona el proceso y cuáles son los pasos a seguir según el <em>Mitis Iudex Dominus Iesus</em>.</p>
+                <span class="card-enlace">Ver proceso completo</span>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="composicion.html" class="card animar animar-delay-2">
+                <div class="card-icono">
+                    <svg viewBox="0 0 24 24" stroke-width="1.8" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                </div>
+                <h3>El Tribunal</h3>
+                <p>Conozca a los ministros que integran nuestro tribunal: Vicario Judicial, Jueces, Defensor del Vínculo, Asesores y Notaría, al servicio de la justicia.</p>
+                <span class="card-enlace">Ver composición</span>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="faq.html" class="card animar animar-delay-3">
+                <div class="card-icono">
+                    <svg viewBox="0 0 24 24" stroke-width="1.8" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h3>Preguntas Frecuentes</h3>
+                <p>Resolvemos las dudas más comunes sobre la nulidad matrimonial, los requisitos, la duración del proceso, los costos y mucho más.</p>
+                <span class="card-enlace">Ver preguntas</span>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="contacto.html" class="card animar animar-delay-4">
+                <div class="card-icono">
+                    <svg viewBox="0 0 24 24" stroke-width="1.8" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                </div>
+                <h3>Contacto y Ubicación</h3>
+                <p>Estamos en el Palacio Arzobispal de Maracaibo, de lunes a viernes de 8:00 a.m. a 2:00 p.m. También puede contactarnos por WhatsApp o correo electrónico.</p>
+                <span class="card-enlace">Contactar ahora</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================================
+     SECCIÓN: MISIÓN VERDE (datos numéricos + texto)
+     ============================================================ -->
+<section class="seccion seccion-verde" aria-labelledby="titulo-mision">
+    <div class="contenedor">
+        <div class="mision-grid">
+
+            <div class="mision-texto animar">
+                <span class="etiqueta-seccion" style="color: var(--dorado);">¿Quiénes somos?</span>
+                <h2 id="titulo-mision">Un servicio de justicia al Pueblo de Dios</h2>
+                <p>Nos dedicamos de manera especial a la instrucción y resolución de las causas de declaración de nulidad matrimonial. A través de este proceso, ofrecemos un ministerio de escucha, acompañamiento y clarificación a los fieles.</p>
+                <p>Siempre al servicio de la sanación espiritual y la paz en nuestra comunidad arquidiocesana, actuamos con el rigor que exige la justicia y la ternura que requiere la pastoral.</p>
+                <a href="proceso.html" class="btn btn-primario" style="margin-top: 12px; align-self: flex-start;">Conocer el proceso</a>
+            </div>
+
+            <div class="mision-datos animar animar-delay-2">
+                <div class="dato-card">
+                    <span class="dato-numero">12–18</span>
+                    <span class="dato-label">meses, duración estimada del proceso ordinario</span>
+                </div>
+                <div class="dato-card">
+                    <span class="dato-numero">45 d</span>
+                    <span class="dato-label">proceso más breve (proceso brevior ante el Obispo)</span>
+                </div>
+                <div class="dato-card">
+                    <span class="dato-numero">Can. 1684</span>
+                    <span class="dato-label">Norma que regula la ejecución de la sentencia</span>
+                </div>
+                <div class="dato-card">
+                    <span class="dato-numero">2015</span>
+                    <span class="dato-label">Reforma del Papa Francisco — Mitis Iudex Dominus Iesus</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================================
+     SECCIÓN: DOCUMENTOS DESCARGABLES
+     ============================================================ -->
+<section class="seccion" aria-labelledby="titulo-docs">
+    <div class="contenedor">
+        <div class="seccion-encabezado animar">
+            <span class="etiqueta-seccion">Documentación</span>
+            <h2 id="titulo-docs">Planillas y documentos oficiales</h2>
+            <div class="divisor"></div>
+            <p>Descargue los documentos que necesitará para iniciar su causa ante este Tribunal.</p>
         </div>
 
-        <div class="proceso-item">
-            <h3>3. Fase de Discusión y Decisión</h3>
-            <p>El Defensor del Vínculo presenta sus alegatos. Finalmente, el Colegio de Jueces dicta la <strong>Sentencia</strong>, determinando si consta o no la nulidad del matrimonio.</p>
+        <div class="docs-lista">
+            <a href="requisitos-nulidad.pdf" target="_blank" rel="noopener" class="doc-item animar animar-delay-1">
+                <div class="doc-icono" aria-hidden="true">📄</div>
+                <div class="doc-info">
+                    <strong>Documentos necesarios y Causales de Nulidad Matrimonial</strong>
+                    <span>Lista completa de requisitos y documentos a presentar ante el Tribunal · PDF</span>
+                </div>
+                <span class="doc-accion">Descargar ↓</span>
+            </a>
+
+            <a href="formulario-introduccion.pdf" target="_blank" rel="noopener" class="doc-item animar animar-delay-2">
+                <div class="doc-icono" aria-hidden="true">📝</div>
+                <div class="doc-info">
+                    <strong>Modelo de Escrito Introductorio (Libelo de Demanda)</strong>
+                    <span>Modelo oficial para la presentación de su causa · PDF</span>
+                </div>
+                <span class="doc-accion">Descargar ↓</span>
+            </a>
         </div>
 
-        <div class="nota-pastoral" style="background-color: #f9f6f0; padding: 15px; border-left: 5px solid #C5A059; margin-top: 20px;">
-            <p><em><strong>Nota:</strong> Antes de iniciar cualquier trámite, recomendamos solicitar una entrevista previa de asesoramiento en nuestras oficinas.</em></p>
+        <div class="nota-pastoral animar" style="margin-top: 32px;">
+            <p><strong>Nota importante:</strong> Antes de descargar o presentar cualquier documento, le recomendamos solicitar una entrevista previa de asesoramiento en nuestras oficinas o por WhatsApp. Nuestros asesores le orientarán sin costo adicional.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="documentacion">
-        <h2>Documentación y Planillas</h2>
-        <p>Haga clic en los enlaces para descargar los archivos necesarios en formato PDF:</p>
-        <ul>
-            <li>
-                <strong>Documentos necesarios y Causales de Nulidad Matrimonial:</strong><br>
-                <a href="requisitos-nulidad.pdf" target="_blank" style="color: #1A432B; text-decoration: underline;">📄 Descargar lista de requisitos y documentos a presentar</a>
-            </li>
-            <br>
-            <li>
-                <strong>Modelo de Escrito Introductorio:</strong><br>
-                <a href="formulario-introduccion.pdf" target="_blank" style="color: #1A432B; text-decoration: underline;">📄 Descargar Modelo de Escrito Introductorio</a>
-            </li>      
-        </ul>
-    </section>
 
-    <section id="equipo">
-        <h2>Nuestro Equipo</h2>
-        <p>El Tribunal Eclesiástico Metropolitano de Maracaibo está conformado por ministros dedicados a la búsqueda de la verdad y la justicia.</p>
-        <div class="equipo-grid">
-            <article>
-                <img src="monsenor.jpg" alt="Mons. José Luis Azuaje Ayala" class="foto-oficial">
-                <h3>Moderador del Tribunal</h3>
-                <p><strong>S.E.R. Mons. José Luis Azuaje Ayala</strong><br>Arzobispo de Maracaibo.</p>
-            </article>
-
-            <article>
-                <img src="vicario.jpg" alt="Pbro. Rafael Ángel Villalobos Carmona" class="foto-oficial">
-                <h3>Vicario Judicial</h3>
-                <p><strong>Pbro. Rafael Ángel Villalobos Carmona</strong><br>Director del Tribunal y juez de la sede.</p>
-            </article>
-
-            <article>
-                <img src="defensor.jpg" alt="Pbro. Alexander Enrique Árias González" class="foto-oficial">
-                <h3>Defensor del Vínculo</h3>
-                <p><strong>Pbro. Alexander Enrique Árias González</strong><br>Encargado de defender la validez del matrimonio.</p>
-            </article>
-
-            <article>
-                <img src="asesor1.jpg" alt="Abog. Alberto Sobalvarro" class="foto-oficial">
-                <h3>Asesor</h3>
-                <p><strong>Abog. Alberto Sobalvarro</strong></p>
-            </article>
-
-            <article>
-                <img src="asesor2.jpg" alt="Abog. Francis Guanipa" class="foto-oficial">
-                <h3>Asesora</h3>
-                <p><strong>Abog. Francis Guanipa</strong></p>
-            </article>
-
-            <article>
-                <img src="asesor3.jpg" alt="Abog. Alejandro Méndez" class="foto-oficial">
-                <h3>Asesor</h3>
-                <p><strong>Abog. Alejandro Méndez</strong></p>
-            </article>
-
-            <article>
-                <img src="notaria.jpg" alt="Lcda. Janeira Josefina Díaz" class="foto-oficial">
-                <h3>Notaría</h3>
-                <p><strong>Lcda. Janeira Josefina Díaz</strong><br>Responsable de la custodia de actas y documentos.</p>
-            </article>
+<!-- ============================================================
+     SECCIÓN: LLAMADA A LA ACCIÓN (CTA)
+     ============================================================ -->
+<section class="seccion seccion-alt" aria-labelledby="titulo-cta">
+    <div class="contenedor" style="text-align: center;">
+        <div class="seccion-encabezado animar" style="margin-bottom: 32px;">
+            <span class="etiqueta-seccion">¿Necesita orientación?</span>
+            <h2 id="titulo-cta" style="color: var(--verde-oscuro);">Estamos para acompañarle</h2>
+            <div class="divisor"></div>
+            <p>Si tiene dudas sobre su situación matrimonial o desea iniciar un proceso, no dude en contactarnos. La primera consulta es orientativa y completamente confidencial.</p>
         </div>
-    </section>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;" class="animar animar-delay-1">
+            <a href="https://wa.me/584143676212?text=Hola,%20deseo%20realizar%20una%20consulta%20al%20Tribunal%20Eclesiástico" target="_blank" rel="noopener" class="btn-whatsapp btn">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Contactar por WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
 
-    <section id="faq">
-        <h2>Preguntas Frecuentes</h2>
-        
-        <div class="faq-item">
-            <div class="faq-pregunta">
-                <p><strong>¿Cuánto tiempo dura un proceso de nulidad?</strong></p>
-                <span class="flecha">▼</span>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+    <div class="footer-grid">
+
+        <!-- Marca -->
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <img src="logo-oficial.svg" alt="Escudo Tribunal" width="48" height="48">
+                <span class="footer-logo-nombre">Tribunal Eclesiástico<br>Metropolitano</span>
             </div>
-            <div class="faq-respuesta">
-                <p>Suele durar entre 12 y 18 meses, dependiendo de la complejidad y la disponibilidad de los testigos.</p>
-            </div>
+            <p>Órgano de justicia canónica de la Arquidiócesis de Maracaibo, al servicio de la verdad y la caridad pastoral desde su fundación.</p>
+            <p style="font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-top: 8px;">Toda la información es tratada con absoluta reserva conforme al derecho canónico (can. 1455).</p>
         </div>
 
-        <div class="faq-item">
-            <div class="faq-pregunta">
-                <p><strong>¿Es necesario contratar un abogado privado?</strong></p>
-                <span class="flecha">▼</span>
-            </div>
-            <div class="faq-respuesta">
-                <p>No es estrictamente necesario. El Tribunal cuenta con asesores que pueden orientar a las partes.</p>
-            </div>
+        <!-- Navegación -->
+        <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proceso.html">Proceso de Nulidad</a></li>
+                <li><a href="composicion.html">Composición del Tribunal</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </div>
 
-        <div class="faq-item">
-            <div class="faq-pregunta">
-                <p><strong>¿Tiene algún costo el proceso?</strong></p>
-                <span class="flecha">▼</span>
+        <!-- Contacto rápido -->
+        <div class="footer-col">
+            <h4>Contacto</h4>
+            <div class="footer-contacto-item">
+                <svg viewBox="0 0 24 24" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <span>Palacio Arzobispal, Calle 95 entre Av. 2 y 3 — El Milagro. Maracaibo, Zulia.</span>
             </div>
-            <div class="faq-respuesta">
-                <p>Se solicita una contribución administrativa, pero la falta de recursos nunca será un impedimento para la justicia.</p>
+            <div class="footer-contacto-item">
+                <svg viewBox="0 0 24 24" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                <a href="tel:+584143676212">+58 414-367-6212</a>
+            </div>
+            <div class="footer-contacto-item">
+                <svg viewBox="0 0 24 24" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                <a href="mailto:tmesecretaria@gmail.com">tmesecretaria@gmail.com</a>
+            </div>
+            <div class="footer-contacto-item">
+                <svg viewBox="0 0 24 24" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span>Lunes a Viernes · 8:00 a.m. – 2:00 p.m.</span>
             </div>
         </div>
 
-        <div class="faq-item">
-            <div class="faq-pregunta">
-                <p><strong>¿La nulidad es lo mismo que un divorcio civil?</strong></p>
-                <span class="flecha">▼</span>
-            </div>
-            <div class="faq-respuesta">
-                <p>No. El divorcio disuelve un vínculo; la nulidad declara que el matrimonio nunca llegó a constituirse válidamente por causas presentes desde el inicio.</p>
-            </div>
-        </div>
+    </div>
 
-        <div class="faq-item">
-            <div class="faq-pregunta">
-                <p><strong>¿Qué sucede si mi exesposo(a) se niega a participar?</strong></p>
-                <span class="flecha">▼</span>
-            </div>
-            <div class="faq-respuesta">
-                <p>El proceso puede continuar. Su negativa no detiene la causa; la justicia se administrará basada en las pruebas y testimonios disponibles.</p>
-            </div>
-        </div>
+    <div class="footer-bottom">
+        <span>© 2025 Tribunal Eclesiástico Metropolitano — Arquidiócesis de Maracaibo</span>
+        <span>Toda información es confidencial · Can. 1455 CIC</span>
+    </div>
+</footer>
 
-        <div class="faq-item">
-            <div class="faq-pregunta">
-                <p><strong>Si se declara la nulidad, ¿qué pasa con los hijos?</strong></p>
-                <span class="flecha">▼</span>
-            </div>
-            <div class="faq-respuesta">
-                <p>Los hijos nacidos de un matrimonio que luego se declara nulo siguen siendo <strong>legítimos</strong> ante la Iglesia (Can. 1137).</p>
-            </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-pregunta">
-                <p><strong>¿Podré volver a casarme por la Iglesia si obtengo la nulidad?</strong></p>
-                <span class="flecha">▼</span>
-            </div>
-            <div class="faq-respuesta">
-                <p>Sí. Una vez que la sentencia es firme y no existe ninguna prohibición especial, ambas partes recuperan su libertad para un nuevo matrimonio canónico.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto y Ubicación</h2>
-        <div class="contacto-contenedor">
-            <div class="contacto-info">
-                <p><strong>📍 Dirección:</strong><br>
-                Palacio Arzobispal, Calle 95, entre Av. 2 y 3 – El Milagro. Al lado del Hospital Central. Maracaibo, Zulia.</p>
-                <p><strong>📞 Teléfono:</strong> +58 414-3676212</p>
-                <p><strong>✉️ Email:</strong> tmesecretaria@gmail.com</p>
-                <p><strong>⏰ Horario:</strong> Lunes a Viernes de 8:00 am a 2:00 pm</p>
-
-<div class="whatsapp-box">
-    <p><strong>¿Prefiere una atención inmediata?</strong></p>
-    <p>Escríbanos directamente a nuestro WhatsApp oficial para consultas rápidas o solicitud de citas.</p>
-    
-    <a href="https://wa.me/584143676212?text=Hola,%20deseo%20realizar%20una%20consulta%20al%20Tribunal%20Eclesiástico" 
-       class="boton-whatsapp" target="_blank">
-       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="20">
-       Contactar por WhatsApp
-    </a>
-</div>
-
-            <div class="mapa-frame">
-                <iframe 
-                    src="https://www.google.com/maps?q=Palacio%20Arzobispal%20de%20Maracaibo&output=embed" 
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2024 Tribunal Eclesiástico Metropolitano - Arquidiócesis de Maracaibo</p>
-    </footer>
-
-    <script>
-        const preguntas = document.querySelectorAll('.faq-pregunta');
-        preguntas.forEach(pregunta => {
-            pregunta.addEventListener('click', () => {
-                const item = pregunta.parentElement;
-                document.querySelectorAll('.faq-item').forEach(otro => {
-                    if (otro !== item) otro.classList.remove('activo');
-                });
-                item.classList.toggle('activo');
-            });
-        });
-    </script>
-<a href="https://wa.me/584143676212" class="whatsapp-float" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/584143676212?text=Hola,%20deseo%20realizar%20una%20consulta%20al%20Tribunal%20Eclesiástico"
+   class="whatsapp-float" target="_blank" rel="noopener"
+   aria-label="Contactar por WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="32" height="32">
 </a>
+
+<script src="main.js"></script>
 </body>
 </html>
