@@ -1001,6 +1001,91 @@ a:hover {
     align-items: start;
 }
 
+/* Tarjetas de información (grid 2×2 en página de contacto) */
+.contacto-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 860px;
+    margin: 0 auto 36px;
+}
+
+.contacto-info-card {
+    background: var(--blanco);
+    border: 1px solid var(--gris-borde);
+    border-radius: var(--radio-grande);
+    padding: 28px 26px;
+    box-shadow: var(--sombra);
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    min-height: 160px;
+    transition: box-shadow var(--transicion), transform var(--transicion);
+}
+
+.contacto-info-card:hover {
+    box-shadow: var(--sombra-hover);
+    transform: translateY(-2px);
+}
+
+.contacto-info-card .icono-caja {
+    width: 44px;
+    height: 44px;
+    background: var(--verde-oscuro);
+    border-radius: var(--radio);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contacto-info-card .icono-caja svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--dorado);
+    fill: none;
+}
+
+.contacto-info-card .info-contenido {
+    flex: 1;
+    min-width: 0;
+}
+
+.contacto-info-card .info-etiqueta {
+    display: block;
+    color: var(--verde-oscuro);
+    font-size: 0.78rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.35;
+}
+
+.contacto-info-card .info-texto,
+.contacto-info-card .info-enlace {
+    color: var(--gris-texto);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.contacto-info-card .info-enlace:hover {
+    color: var(--verde-oscuro);
+}
+
+@media (max-width: 640px) {
+    .contacto-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-info-card {
+        min-height: 0;
+    }
+}
+
 .contacto-datos {
     display: flex;
     flex-direction: column;
