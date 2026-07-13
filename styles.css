@@ -1489,7 +1489,8 @@ a:hover {
     box-shadow: 0 6px 24px rgba(37,211,102,0.55);
 }
 
-.whatsapp-float img {
+.whatsapp-float img,
+.whatsapp-float svg {
     width: 32px;
     height: 32px;
 }

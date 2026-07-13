@@ -190,7 +190,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // ============================================================
-    // 7. HEADER: efecto de sombra al hacer scroll
+    // 7. AÑO ACTUAL EN EL PIE DE PÁGINA
+    // ============================================================
+    document.querySelectorAll('[data-anio]').forEach(el => {
+        el.textContent = new Date().getFullYear();
+    });
+
+
+    // ============================================================
+    // 8. HEADER: efecto de sombra al hacer scroll
     // ============================================================
     const siteHeader = document.querySelector('.site-header');
     if (siteHeader) {

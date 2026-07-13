@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tribunaleclesiasticomaracaibo.org/sitemap.xml
