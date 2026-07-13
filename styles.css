@@ -862,6 +862,23 @@ a:hover {
     line-height: 1.6;
 }
 
+.miembro-correo {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--verde-oscuro);
+    text-decoration: none;
+    word-break: break-all;
+    border-bottom: 1px solid var(--dorado);
+    padding-bottom: 2px;
+    transition: color 0.2s;
+}
+
+.miembro-correo:hover {
+    color: var(--dorado);
+}
+
 /* Card destacada para el Arzobispo */
 .miembro-card.destacado {
     border-top-color: var(--dorado);
