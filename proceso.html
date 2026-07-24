@@ -19,7 +19,25 @@
     <link rel="canonical" href="https://tribunaleclesiasticomaracaibo.org/proceso.html">
 
     <link rel="icon" type="image/svg+xml" href="logo-oficial.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <meta name="theme-color" content="#1A432B">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Migas de pan para buscadores -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://tribunaleclesiasticomaracaibo.org/" },
+            { "@type": "ListItem", "position": 2, "name": "Proceso de Nulidad", "item": "https://tribunaleclesiasticomaracaibo.org/proceso.html" }
+        ]
+    }
+    </script>
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -139,13 +157,47 @@
             <p>El proceso sigue una secuencia ordenada de etapas canónicas, cada una con su propio rol y propósito en la búsqueda de la verdad.</p>
         </div>
 
+        <!-- Vista resumida: las 6 etapas de un vistazo -->
+        <div class="timeline-resumen animar" aria-hidden="true">
+            <div class="timeline-hito">
+                <div class="timeline-punto">1</div>
+                <strong>Consulta previa</strong>
+                <span>Sin costo</span>
+            </div>
+            <div class="timeline-hito">
+                <div class="timeline-punto">2</div>
+                <strong>Libelo</strong>
+                <span>Semanas</span>
+            </div>
+            <div class="timeline-hito">
+                <div class="timeline-punto">3</div>
+                <strong>Citación</strong>
+                <span>Semanas</span>
+            </div>
+            <div class="timeline-hito">
+                <div class="timeline-punto">4</div>
+                <strong>Instrucción</strong>
+                <span>Varios meses</span>
+            </div>
+            <div class="timeline-hito">
+                <div class="timeline-punto">5</div>
+                <strong>Sentencia</strong>
+                <span>Deliberación</span>
+            </div>
+            <div class="timeline-hito">
+                <div class="timeline-punto">6</div>
+                <strong>Ejecución</strong>
+                <span>Firmeza</span>
+            </div>
+        </div>
+
         <div class="pasos-lista">
 
             <div class="paso">
                 <div class="paso-numero" aria-hidden="true">1</div>
                 <div class="paso-contenido">
                     <h3>Consulta y asesoramiento previo</h3>
-                    <p>Antes de iniciar cualquier trámite formal, le invitamos a una entrevista orientativa con nuestros asesores. En este encuentro, usted podrá exponer su situación, comprender si existen fundamentos canónicos para iniciar una causa y resolver todas sus dudas, sin compromiso ni costo.</p>
+                    <p>Antes de iniciar cualquier trámite formal, le invitamos a una <strong>entrevista preliminar con el Vicario Judicial</strong>. En este encuentro, usted podrá exponer su situación, comprender si existen fundamentos canónicos para iniciar una causa y resolver todas sus dudas, sin compromiso ni costo. Si su causa puede proceder, el Vicario Judicial le designará el asesor que le acompañará durante el proceso.</p>
                 </div>
             </div>
 
@@ -257,50 +309,65 @@
             <p>Reúna con anticipación la documentación necesaria. Esto agilizará significativamente el proceso de admisión de su causa.</p>
         </div>
 
-        <div style="max-width: 820px; margin: 0 auto;">
+        <div class="texto-estrecho">
+            <!-- Barra de avance del checklist (se guarda en este navegador) -->
+            <div class="checklist-progreso animar">
+                <div class="checklist-progreso-texto">
+                    <span>Documentos reunidos: <strong data-checklist-contador>0 de 5</strong></span>
+                    <button type="button" class="btn-imprimir">🖨 Imprimir mi lista</button>
+                </div>
+                <div class="barra-progreso" role="progressbar" aria-label="Avance de documentos reunidos">
+                    <div class="barra-progreso-relleno"></div>
+                </div>
+            </div>
+
             <div class="docs-lista animar">
 
-                <div class="doc-item" style="cursor: default;">
-                    <div class="doc-icono" aria-hidden="true">1</div>
+                <label class="doc-item doc-check">
+                    <input type="checkbox" data-doc="bautismo" aria-label="Partida de bautismo: marcar como reunida">
                     <div class="doc-info">
                         <strong>Partida de bautismo de ambas partes</strong>
                         <span>De la parroquia donde fueron bautizados, reciente (últimos 6 meses).</span>
                     </div>
-                </div>
+                </label>
 
-                <div class="doc-item" style="cursor: default;">
-                    <div class="doc-icono" aria-hidden="true">2</div>
+                <label class="doc-item doc-check">
+                    <input type="checkbox" data-doc="matrimonio" aria-label="Certificado de matrimonio: marcar como reunido">
                     <div class="doc-info">
                         <strong>Certificado de Matrimonio canónico + copia del expediente matrimonial</strong>
                         <span>Expedido por la parroquia donde se celebró el matrimonio.</span>
                     </div>
-                </div>
+                </label>
 
-                <div class="doc-item" style="cursor: default;">
-                    <div class="doc-icono" aria-hidden="true">3</div>
+                <label class="doc-item doc-check">
+                    <input type="checkbox" data-doc="divorcio" aria-label="Sentencia de divorcio civil: marcar como reunida">
                     <div class="doc-info">
                         <strong>Copia simple de la Sentencia definitiva de Divorcio Civil</strong>
                         <span>Sentencia debidamente ejecutoriada por el tribunal civil competente.</span>
                     </div>
-                </div>
+                </label>
 
-                <div class="doc-item" style="cursor: default;">
-                    <div class="doc-icono" aria-hidden="true">4</div>
+                <label class="doc-item doc-check">
+                    <input type="checkbox" data-doc="carta-sacerdote" aria-label="Carta de un sacerdote: marcar como reunida">
                     <div class="doc-info">
                         <strong>Carta de un sacerdote que conozca del caso</strong>
                         <span>Preferiblemente el Párroco, presentando el caso y dando su parecer sobre la posible nulidad.</span>
                     </div>
-                </div>
+                </label>
 
-                <div class="doc-item" style="cursor: default;">
-                    <div class="doc-icono" aria-hidden="true">5</div>
+                <label class="doc-item doc-check">
+                    <input type="checkbox" data-doc="escrito" aria-label="Escrito introductorio: marcar como reunido">
                     <div class="doc-info">
                         <strong>Escrito Introductorio</strong>
                         <span>Petición del juicio para determinar la nulidad del matrimonio, dirigida al Vicario Judicial. En ella se exponen los hechos en que se funda la petición. <strong>Debe estar fechada y firmada por quien la presenta.</strong> Puede usar el modelo oficial disponible para descarga.</span>
                     </div>
-                </div>
+                </label>
 
             </div>
+
+            <p class="animar" style="font-size: 0.85rem; color: #999; margin-top: 12px; text-align: center;">
+                Su avance se guarda únicamente en este navegador; nadie más puede verlo.
+            </p>
 
             <div class="docs-lista animar" style="margin-top: 28px;">
                 <a href="formulario-introduccion.pdf" target="_blank" rel="noopener" class="doc-item">
@@ -312,6 +379,15 @@
                     <span class="doc-accion">Descargar ↓</span>
                 </a>
             </div>
+
+            <div class="whatsapp-card animar" style="margin-top: 28px;">
+                <p><strong>¿Dudas sobre algún documento?</strong><br>Escríbanos por WhatsApp y le orientamos sobre dónde y cómo obtenerlo.</p>
+                <a href="https://wa.me/584143676212?text=Hola,%20tengo%20dudas%20sobre%20los%20documentos%20requeridos%20para%20iniciar%20una%20causa%20de%20nulidad"
+                   target="_blank" rel="noopener" class="btn-whatsapp">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Preguntar por un documento
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -321,15 +397,16 @@
      CTA FINAL
      ============================================================ -->
 <section class="seccion seccion-verde" aria-labelledby="titulo-cta-proceso">
-    <div class="contenedor" style="text-align: center;">
+    <div class="contenedor centrado">
         <div class="seccion-encabezado animar">
             <span class="etiqueta-seccion" style="color: var(--dorado);">¿Listo para comenzar?</span>
             <h2 id="titulo-cta-proceso" style="color: var(--blanco);">Dé el primer paso con confianza</h2>
             <div class="divisor"></div>
             <p style="color: rgba(255,255,255,0.78);">Nuestro equipo está preparado para acompañarle desde el primer momento. La consulta inicial es gratuita y absolutamente confidencial.</p>
         </div>
-        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;" class="animar animar-delay-1">
+        <div class="botones-cta animar animar-delay-1">
             <a href="contacto.html" class="btn btn-primario">Solicitar consulta previa</a>
+            <a href="orientador.html" class="btn btn-secundario">¿Aplica mi caso? Orientador</a>
             <a href="faq.html" class="btn btn-secundario">Ver preguntas frecuentes</a>
         </div>
     </div>
@@ -354,6 +431,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="proceso.html">Proceso de Nulidad</a></li>
+                <li><a href="orientador.html">Orientador de nulidad</a></li>
                 <li><a href="composicion.html">Composición del Tribunal</a></li>
                 <li><a href="faq.html">Preguntas Frecuentes</a></li>
                 <li><a href="contacto.html">Contacto</a></li>

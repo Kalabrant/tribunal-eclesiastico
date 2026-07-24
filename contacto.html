@@ -18,7 +18,25 @@
     <link rel="canonical" href="https://tribunaleclesiasticomaracaibo.org/contacto.html">
 
     <link rel="icon" type="image/svg+xml" href="logo-oficial.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <meta name="theme-color" content="#1A432B">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Migas de pan para buscadores -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://tribunaleclesiasticomaracaibo.org/" },
+            { "@type": "ListItem", "position": 2, "name": "Contacto", "item": "https://tribunaleclesiasticomaracaibo.org/contacto.html" }
+        ]
+    }
+    </script>
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -155,6 +173,91 @@
             <strong>🔒 Confidencialidad garantizada:</strong> Toda información que comparta con el Tribunal Eclesiástico —ya sea por correo, teléfono o en persona— está protegida por el secreto judicial y el deber de reserva de nuestros ministros, conforme al <em>Can. 1455 del Código de Derecho Canónico</em>. Su situación personal nunca será divulgada a terceros.
         </div>
 
+        <!-- Formulario de contacto -->
+        <div class="formulario-card animar" id="escribanos" style="max-width: 720px; margin: 0 auto 52px;">
+            <h3>Escríbanos directamente</h3>
+            <p style="font-size: 0.92rem; color: #777; margin: -10px 0 22px; line-height: 1.7;">
+                Complete este formulario y su mensaje llegará al correo de la Notaría del Tribunal.
+                Si desea iniciar una causa, el primer paso es siempre una <strong style="color: var(--verde-oscuro);">entrevista preliminar con el Vicario Judicial</strong>,
+                quien le orientará y, de proceder su causa, le designará un asesor.
+            </p>
+
+            <form id="formulario-contacto"
+                  action="https://formsubmit.co/ajax/notaria@tribunaleclesiasticomaracaibo.org"
+                  method="POST" novalidate>
+
+                <!-- Configuración de FormSubmit -->
+                <input type="hidden" name="_subject" value="Nueva consulta desde la web del Tribunal">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                <div class="campo">
+                    <label for="campo-nombre">Nombre completo *</label>
+                    <input type="text" id="campo-nombre" name="nombre" autocomplete="name" required>
+                    <span class="campo-error" data-error="nombre" aria-live="polite"></span>
+                </div>
+
+                <div class="campos-dos">
+                    <div class="campo">
+                        <label for="campo-email">Correo electrónico *</label>
+                        <input type="email" id="campo-email" name="email" autocomplete="email" required>
+                        <span class="campo-error" data-error="email" aria-live="polite"></span>
+                    </div>
+                    <div class="campo">
+                        <label for="campo-telefono">Teléfono (opcional)</label>
+                        <input type="tel" id="campo-telefono" name="telefono" autocomplete="tel" placeholder="+58 4XX-XXX-XXXX">
+                        <span class="campo-error" data-error="telefono" aria-live="polite"></span>
+                    </div>
+                </div>
+
+                <div class="campos-dos">
+                    <div class="campo">
+                        <label for="campo-consulta">Tipo de consulta *</label>
+                        <select id="campo-consulta" name="consulta" required>
+                            <option value="" selected disabled>Seleccione una opción…</option>
+                            <option>Orientación general</option>
+                            <option>Solicitar entrevista preliminar con el Vicario Judicial</option>
+                            <option>Información sobre una causa en curso</option>
+                            <option>Otro asunto</option>
+                        </select>
+                        <span class="campo-error" data-error="consulta" aria-live="polite"></span>
+                    </div>
+                    <div class="campo">
+                        <label for="campo-franja">Horario preferido de contacto</label>
+                        <select id="campo-franja" name="horario_preferido">
+                            <option selected>Sin preferencia</option>
+                            <option>8:00 – 11:00 a. m.</option>
+                            <option>11:00 a. m. – 2:00 p. m.</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="campo-mensaje">Mensaje *</label>
+                    <textarea id="campo-mensaje" name="mensaje" required
+                              placeholder="Cuéntenos brevemente su situación o su consulta. No es necesario entrar en detalles personales en este primer contacto."></textarea>
+                    <span class="campo-error" data-error="mensaje" aria-live="polite"></span>
+                </div>
+
+                <div class="aviso-privacidad">
+                    <strong>🔒 Confidencialidad:</strong> su mensaje se transmite por medios electrónicos y será
+                    tratado con absoluta reserva por los ministros del Tribunal, conforme al can. 1455 del
+                    Código de Derecho Canónico. Le recomendamos no incluir detalles íntimos en este primer contacto:
+                    para ello está la entrevista preliminar.
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar consulta</button>
+
+                <div class="mensaje-exito" role="status">
+                    ✓ Su consulta fue enviada correctamente. Le responderemos dentro del horario de oficina.
+                </div>
+                <div class="mensaje-error" role="alert">
+                    No pudimos enviar su mensaje. Por favor, intente de nuevo o escríbanos por WhatsApp al +58 414-367-6212.
+                </div>
+            </form>
+        </div>
+
         <!-- Mapa -->
         <div class="mapa-contenedor animar">
             <iframe
@@ -191,6 +294,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="proceso.html">Proceso de Nulidad</a></li>
+                <li><a href="orientador.html">Orientador de nulidad</a></li>
                 <li><a href="composicion.html">Composición del Tribunal</a></li>
                 <li><a href="faq.html">Preguntas Frecuentes</a></li>
                 <li><a href="contacto.html">Contacto</a></li>

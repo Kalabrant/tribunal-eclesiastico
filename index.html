@@ -21,7 +21,13 @@
 
     <!-- Icono y color del navegador -->
     <link rel="icon" type="image/svg+xml" href="logo-oficial.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <meta name="theme-color" content="#1A432B">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Datos estructurados (Google) -->
     <script type="application/ld+json">
@@ -202,6 +208,23 @@
 
 
 <!-- ============================================================
+     SECCIÓN: ORIENTADOR INTERACTIVO (promo)
+     ============================================================ -->
+<section class="seccion seccion-alt" aria-label="Orientador de nulidad">
+    <div class="contenedor">
+        <div class="orientador-promo animar">
+            <div class="orientador-promo-texto">
+                <span class="etiqueta-seccion" style="color: var(--dorado);">Herramienta de orientación</span>
+                <h3>¿No sabe si su situación puede presentarse ante el Tribunal?</h3>
+                <p>Responda cinco preguntas sencillas y reciba una orientación inicial sobre los pasos a seguir. Es anónimo: sus respuestas no se envían ni se guardan en ningún servidor.</p>
+            </div>
+            <a href="orientador.html" class="btn btn-primario">Comenzar orientación</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================================
      SECCIÓN: DOCUMENTOS DESCARGABLES
      ============================================================ -->
 <section class="seccion" aria-labelledby="titulo-docs">
@@ -234,7 +257,7 @@
         </div>
 
         <div class="nota-pastoral animar" style="margin-top: 32px;">
-            <p><strong>Nota importante:</strong> Antes de descargar o presentar cualquier documento, le recomendamos solicitar una entrevista previa de asesoramiento en nuestras oficinas o por WhatsApp. Nuestros asesores le orientarán sin costo adicional.</p>
+            <p><strong>Nota importante:</strong> Antes de descargar o presentar cualquier documento, le recomendamos solicitar una entrevista preliminar con el Vicario Judicial, en nuestras oficinas o por WhatsApp. Esta primera orientación no tiene costo alguno.</p>
         </div>
     </div>
 </section>
@@ -244,14 +267,14 @@
      SECCIÓN: LLAMADA A LA ACCIÓN (CTA)
      ============================================================ -->
 <section class="seccion seccion-alt" aria-labelledby="titulo-cta">
-    <div class="contenedor" style="text-align: center;">
+    <div class="contenedor centrado">
         <div class="seccion-encabezado animar" style="margin-bottom: 32px;">
             <span class="etiqueta-seccion">¿Necesita orientación?</span>
             <h2 id="titulo-cta" style="color: var(--verde-oscuro);">Estamos para acompañarle</h2>
             <div class="divisor"></div>
             <p>Si tiene dudas sobre su situación matrimonial o desea iniciar un proceso, no dude en contactarnos. La primera consulta es orientativa y completamente confidencial.</p>
         </div>
-        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;" class="animar animar-delay-1">
+        <div class="botones-cta animar animar-delay-1">
             <a href="https://wa.me/584143676212?text=Hola,%20deseo%20realizar%20una%20consulta%20al%20Tribunal%20Eclesiástico" target="_blank" rel="noopener" class="btn-whatsapp btn">
                 <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                 Contactar por WhatsApp
@@ -283,6 +306,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="proceso.html">Proceso de Nulidad</a></li>
+                <li><a href="orientador.html">Orientador de nulidad</a></li>
                 <li><a href="composicion.html">Composición del Tribunal</a></li>
                 <li><a href="faq.html">Preguntas Frecuentes</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
